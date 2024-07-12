@@ -7,25 +7,22 @@
     padding: 10px 50px;
     position: sticky;
     top: 0px;
+    padding: 30px 40px;
     z-index: 3;
   }
   
   .logo {
     color: var(--yellow);
-    font-size: 24px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  .logo img {
-    height: 70px;
-  }
 
   .logo h1 {
-    margin-left: 15px;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    font-weight: 500;
   }
   
   .menu-icon {
@@ -33,7 +30,7 @@
     flex-direction: column;
     cursor: pointer;
   }
-  
+ 
   .menu-icon .bar {
     width: 25px;
     height: 3px;
@@ -72,14 +69,15 @@
   }
   
   .menu-items a {
-    color: #cd985b;
+    color: var(--yellow);
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
   }
   
   .menu-items a:hover {
-    color: #dbc09a;
+    font-weight: 500;
+    color: white;
   }
   
   @media (max-width: 768px) {
@@ -107,4 +105,109 @@
       font-size: 20px;
     }
   }
+  
+  .menu-item_active {
+    color: white !important;
+    font-weight: 700;
+  }
+  
+
+.footer {
+    background: var(--darkBrown);
+    padding: 30px;
+    color: #d3d3d3;
+    height: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+} 
+
+.footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer .footer-content .footer-section h2 {
+    color: var(--yellow);
+    margin-bottom: 10px;
+}
+
+.footer .footer-content .footer-section .logo-text {
+    color: var(--yellow);
+    font-size: 1.8em;
+}
+
+.footer .footer-content .footer-section .contact span {
+    display: block;
+    margin: 5px 0;
+}
+
+.footer .footer-content .footer-section .socials a {
+    border: 1px solid #d3d3d3;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    color: #d3d3d3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .footer-content .footer-section .socials a:hover {
+    color: #fff;
+}
+
+.footer .footer-content .footer-section.links ul {
+    list-style: none;
+}
+
+.footer .footer-content .footer-section.links ul a {
+    text-decoration: none;
+    color: #d3d3d3;
+    transition: color 0.3s;
+}
+
+.footer .footer-content .footer-section.links ul a:hover {
+    color: #fff;
+    padding-left: 10px;
+}
+
+.footer .footer-content .footer-section.contact-form .text-input {
+    background: #edd9ae;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #d3d3d3;
+    width: 100%;
+}
+
+.footer .footer-content .footer-section.contact-form .btn {
+    background: #e56b51;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer .footer-content .footer-section.contact-form .btn:hover {
+    background: #e55a00;
+}
+
+.footer .footer-bottom {
+  border-top: 1px solid var(--yellow);
+    background: var(--darkBrown);
+    color: var(--yellow);
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
   

@@ -1,0 +1,96 @@
+.places {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.places-content {
+    margin: 100px 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px 0;
+    flex-wrap: wrap;
+}
+
+
+
+.tourist-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    width: 45%;
+    height: 400px;
+    transition: transform 0.2s;
+}
+
+
+
+.tourist-card:hover {
+    transform: scale(1.05);
+}
+
+.tourist-image {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tourist-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.tourist-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.tourist-description {
+    color: #666;
+    font-size: 0.9em;
+    margin: 10px 0;
+    flex-grow: 1;
+}
+
+.visit-button {
+    background-color: var(--orange);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-end;
+}
+
+.visit-button:hover {
+    background-color: #e55a00;
+}
+
+@media (max-width: 1200px) {
+    .places-content {
+        width: 90%;
+        gap: 30px;
+    }
+    .tourist-card {
+        width: 100%;
+        flex-direction: column;
+        height: max-content ;
+    }
+    .tourist-image {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+    }
+    .tourist-info {
+        width: 100%;
+    }
+}

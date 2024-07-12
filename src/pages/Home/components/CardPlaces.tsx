@@ -15,7 +15,7 @@ const CardPlaces: React.FunctionComponent<CardPlacesProps> = ({
         <>
             {
                 direction ?
-                    <div className="card">
+                    <div className="card" data-aos="fade-right">
                         <div className="card-image">
                             <img src={image} alt="Placeholder Image" />
                         </div>
@@ -25,7 +25,7 @@ const CardPlaces: React.FunctionComponent<CardPlacesProps> = ({
                             <p>{text}</p>
                         </div>
                     </div> :
-                    <div className="card">
+                    <div className="card" data-aos="fade-right">
                         <div className="card-info">
                             <h2>{title}</h2>
                             <h3>{subtitle}</h3>
