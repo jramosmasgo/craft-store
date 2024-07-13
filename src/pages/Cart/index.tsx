@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import "./cart.css"
-import Banner from '../../components/shared/Banner'
-import { IoClose, IoCloseCircle } from 'react-icons/io5'
 import { CgClose } from 'react-icons/cg'
+import Banner from '../../components/shared/Banner'
 import { IProductCart } from '../../interfaces/productCart.interface'
+import "./cart.css"
 
 export const Cart: React.FunctionComponent = () => {
     const [dataCart, setDataCart] = useState<IProductCart[]>([]);
@@ -31,7 +30,7 @@ export const Cart: React.FunctionComponent = () => {
                         </div>
                         {
                             dataCart?.map((item, index) =>
-                                <div className="cart-item">
+                                <div className="cart-item" key={index}>
                                     <img src={item.product.imgUrl} alt="Producto 1" className="cart-item-product-image" />
                                     <div className="cart-item-product-details">
                                         <div className='product-details-name'>

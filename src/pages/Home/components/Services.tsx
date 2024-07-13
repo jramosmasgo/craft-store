@@ -1,8 +1,7 @@
 import React from 'react'
-import { BsPeopleFill } from 'react-icons/bs'
 import { FaPeopleRoof } from 'react-icons/fa6'
 import { GiCampingTent } from 'react-icons/gi'
-import { MdSports, MdSportsSoccer } from 'react-icons/md'
+import { MdSportsSoccer } from 'react-icons/md'
 import { TiTree } from 'react-icons/ti'
 
 const Services: React.FunctionComponent = () => {

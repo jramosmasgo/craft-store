@@ -15,7 +15,7 @@ const Products: React.FunctionComponent = () => {
                 </div>
                 <div className="products-content">
                     {
-                        products.map((item, index) => {
+                        products.map((item) => {
                             return <div key={item.id} className="products-content_item" data-aos="fade-in">
                                 <CardProduct product={item} />
                             </div>
