@@ -1,0 +1,56 @@
+.history-container  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-video {
+    border-radius: 10px;
+    background: white;
+    margin: 100px 0;
+    display: flex;
+    width: 80%;
+    height: 600px;
+}
+ 
+.card-video-info {
+    padding: 50px 70px  ; 
+    width: 50%;
+}
+
+.card-video-info p {
+    margin: 15px 0;
+     color: #666;
+     text-align: justify;
+     line-height: 30px;
+}
+.video-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .card-video {
+        width: 70%;
+        flex-direction: column;
+        height: max-content;
+        margin: 20px 0;
+    }
+    .card-video-info{
+        width: 100%;
+        padding: 20px;
+    }
+}

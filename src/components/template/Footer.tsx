@@ -7,31 +7,30 @@ const Footer: React.FunctionComponent = () => {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-section about">
-                    <h2 className="logo-text">MiSitio</h2>
-                    <p>
-                        Somos una empresa dedicada a ofrecer los mejores servicios y productos. Nuestra misión es satisfacer a nuestros clientes con calidad y compromiso.
+                    <h2 className="logo-text">BuriWeb</h2>
+                    <p style={{ fontSize: "15px", textAlign: "justify" }}>
+                        Somos BuriWeb, un grupo de jóvenes universitarios, interesados por la cultura de nuestra región, con este emprendimiento, buscamos que más personas, ya sean del país o turistas de diversos países, conozcan más sobre la cultura, historia y artesanías que hay en Cochas Chico.
                     </p>
-                    <div className="contact">
-                        <span><i className="fas fa-phone"></i> &nbsp; +123-456-7890</span>
-                        <span><i className="fas fa-envelope"></i> &nbsp; info@misitio.com</span>
+                    <div className="contact" style={{ marginTop: "30px" }}>
+                        <span><i className="fas fa-phone"></i> &nbsp; +51 960 070 475</span>
+                        <span><i className="fas fa-envelope"></i> &nbsp; cochaschico272@gmail.com</span>
                     </div>
-                    <div className="socials">
+                    {/* <div className="socials">
                         <a href="#"><FaFacebookF /></a>
                         <a href="#"><FaTwitter /></a>
                         <a href="#"><FaInstagram /></a>
                         <a href="#"><BiLogoGmail /></a>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="footer-section links">
-                    <h2>Enlaces rápidos</h2>
+                    <h2>Nuestros Valores</h2>
                     <br />
                     <ul>
-                        <a href="#"><li>Inicio</li></a>
-                        <a href="#"><li>Servicios</li></a>
-                        <a href="#"><li>Acerca de</li></a>
-                        <a href="#"><li>Contacto</li></a>
-                        <a href="#"><li>Política de Privacidad</li></a>
+                        <a href="#"><li>Honestidad</li></a>
+                        <a href="#"><li>Diversidad</li></a>
+                        <a href="#"><li>Respeto de</li></a>
+                        <a href="#"><li>Empatia</li></a>
                     </ul>
                 </div>
 
@@ -50,7 +49,7 @@ const Footer: React.FunctionComponent = () => {
             </div>
 
             <div className="footer-bottom">
-                &copy; cochaschico.com | Jean Ramos Masgo
+                &copy; Cochas Chico - Huancayo - 2024
             </div>
         </footer>
     )

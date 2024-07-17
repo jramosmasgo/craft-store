@@ -54,6 +54,7 @@ const CardProduct: React.FunctionComponent<{ product: IProduct }> = ({
             <div className="product-info">
                 <h2 className="product-title">{product.name}</h2>
                 <p className="product-price">S/. {product.price.toString()}</p>
+                <p style={{ color: "silver", textAlign: 'center', marginBottom: "20px" }}>{product.description}</p>
                 <button className="buy-button" onClick={() => addProductoToCart(product)} >Agregar al Carrito</button>
             </div>
         </div>

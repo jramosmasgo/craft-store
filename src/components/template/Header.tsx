@@ -25,7 +25,6 @@ const Header: React.FunctionComponent = () => {
       <ul className={`menu-items ${isOpen ? 'open' : ''}`}>
         <li><Link className={(pathname === '/home') ? 'menu-item_active' : ''} to="home">Inicio</Link></li>
         <li><Link className={(pathname === '/products') ? 'menu-item_active' : ''} to="products">Productos</Link></li>
-        <li><Link className={(pathname === '/places') ? 'menu-item_active' : ''} to="places">Lugares</Link></li>
         <li><Link className={(pathname === '/history') ? 'menu-item_active' : ''} to="history">Historia</Link></li>
         {/* <li >
           <Link to={'login'}><BiUser /></Link>
