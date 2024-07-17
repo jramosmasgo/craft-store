@@ -1,6 +1,4 @@
 import React from 'react'
-import { BiLogoGmail } from 'react-icons/bi'
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 const Footer: React.FunctionComponent = () => {
     return (
